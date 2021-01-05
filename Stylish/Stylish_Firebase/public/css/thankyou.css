@@ -1,0 +1,52 @@
+@import 'common.css';
+
+main .view {
+  width: 80%;
+  max-width: 980px;
+  padding: 40px 10px;
+  margin: auto;
+}
+
+main h2 {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+  font-size: 1.6em;
+  line-height: 1.4em;
+  font-weight: bold;
+  text-align: center;
+}
+
+main h3 {
+  width: 100%;
+  padding: 20px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.order {
+  width: 180px;
+  padding: 5px 10px;
+  margin: auto;
+  background-color: #eee;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.more {
+  margin-top: 40px;
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+.more a:hover {
+  color: saddlebrown;
+}
+
+@media screen and (max-width: 600px) {
+  .more {
+    margin-bottom: 100px;
+  }
+}

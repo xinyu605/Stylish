@@ -1,0 +1,342 @@
+@import 'common.css';
+
+/******************************
+    PC : screen width > 1000px
+*******************************/
+
+input,
+select,
+img {
+  vertical-align: middle;
+}
+
+main {
+  width: 100%;
+  padding: 20px 10px;
+}
+
+main .view {
+  max-width: 980px;
+  width: 100%;
+  margin: auto;
+}
+
+.shoppingCart {
+  margin-bottom: 20px;
+}
+
+.shoppingCart > .title {
+  width: 100%;
+  font-weight: bold;
+}
+
+.shoppingCart .row {
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex: auto;
+}
+
+.shoppingCart .row > .variant {
+  width: 300px;
+  display: flex;
+  flex: none;
+  order: 1;
+  line-height: 1.5em;
+  font-size: 0.9em;
+}
+
+.shoppingCart .row > .quantity {
+  flex: auto;
+  order: 3;
+}
+
+.shoppingCart .row > .price {
+  flex: auto;
+  order: 4;
+}
+
+.shoppingCart .row > .subtotal {
+  flex: auto;
+  order: 5;
+}
+
+.shoppingCart .row > .remove {
+  width: 50px;
+  flex: none;
+  order: 6;
+  cursor: pointer;
+}
+
+.shoppingCart .list {
+  border: 1px solid #979797;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.shoppingCart .list .empty {
+  padding: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.shoppingCart .list .row {
+  display: flex;
+}
+
+.shoppingCart .list .variant {
+  display: flex;
+  flex: none;
+}
+
+.shoppingCart .list .picture {
+  width: 100px;
+}
+
+.shoppingCart .list .picture img {
+  width: 100%;
+}
+
+.shoppingCart .list .details {
+  margin-left: 10px;
+  flex: auto;
+}
+
+.shoppingCart .list > .row > .quantity > select {
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+}
+
+.target {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #e8e8e8;
+}
+
+.target > .shipping {
+  flex: auto;
+}
+
+.target span {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.reminder {
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+
+.recipient > .title,
+.payment > .title {
+  margin: 50px 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #3f3a3a;
+  font-weight: bold;
+}
+
+.recipient > .line,
+.payment > .line {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.recipient > .line > .text,
+.payment > .line > .text {
+  width: 150px;
+  flex: none;
+}
+
+.recipient > .line > .input,
+.payment > .line > .input {
+  flex: auto;
+}
+
+.recipient > .line > .input > label {
+  margin-right: 10px;
+}
+
+.recipient > .line > .input > input {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #979797;
+  border-radius: 4px;
+}
+
+.recipient > .line > .input > label > .time {
+  vertical-align: middle;
+}
+
+.payment > .line > .input > .tpfield {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #979797;
+  border-radius: 4px;
+}
+
+.payment > .line > .input > .tpfield > input {
+  border: none;
+}
+
+.confirm {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-top: 1px solid #3f3a3a;
+}
+
+.confirm > .row {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.confirm > .row > .title {
+  width: 100px;
+  flex: none;
+}
+
+.confirm > .row > .price {
+  width: 120px;
+  flex: none;
+  text-align: right;
+  font-size: 1.5em;
+}
+
+.confirm > .row > .price > .unit {
+  font-size: 0.75em;
+}
+
+.confirm > .row > .seperator {
+  width: 240px;
+  height: 1px;
+  background-color: #3f3a3a;
+}
+
+.confirm > .row > button {
+  width: 240px;
+  max-width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #000;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+/***************************
+    Mobile : width < 600px
+****************************/
+
+@media screen and (max-width: 600px) {
+  main .shoppingCart > .title {
+    display: none;
+  }
+
+  main .shoppingCart .row:first-child {
+    padding-top: 0;
+  }
+
+  main .shoppingCart .listRow {
+    border-bottom: 1px solid #888;
+    padding: 30px 0;
+    flex-wrap: wrap;
+  }
+
+  .shoppingCart .row > .variant {
+    width: 90%;
+  }
+
+  main .shoppingCart .row > .quantity,
+  main .shoppingCart .row > .price,
+  main .shoppingCart .row > .subtotal {
+    text-align: center;
+  }
+
+  main .shoppingCart .listRow > .quantity::before {
+    content: '數量';
+    display: block;
+    margin: 10px 0 5px;
+  }
+
+  main .shoppingCart .listRow > .price::before {
+    content: '單價';
+    display: block;
+    margin: 10px 0 5px;
+  }
+
+  main .shoppingCart .listRow > .subtotal::before {
+    content: '小計';
+    display: block;
+    margin: 10px 0 5px;
+  }
+
+  main .shoppingCart .row > .remove {
+    width: 10%;
+    align-self: flex-start;
+    order: 2;
+  }
+
+  main .shoppingCart .row:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  main .target span {
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .recipient > .line,
+  .payment > .line {
+    flex-wrap: wrap;
+  }
+
+  .recipient > .line > .text,
+  .payment > .line > .text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .recipient > .line > .input > input[type='text'],
+  .payment > .line > .input > .tpfield {
+    width: 95%;
+  }
+
+  .payment > .line > .input > .tpfield > input[type='text'] {
+    width: 90%;
+  }
+
+  .recipient > .line > .input > label,
+  .payment > .line > .input > label {
+    width: 95%;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .confirm {
+    padding: 20px 0;
+  }
+
+  .confirm .row {
+    padding: 0;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .confirm .row .seperator {
+    width: 75%;
+  }
+
+  .confirm > .row > button {
+    width: 95%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,572 @@
+/* Layout width */
+.full-width {
+  width: 100%;
+}
+
+.fixed-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Loading */
+.loading {
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  padding-top: 250px;
+  display: none;
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+/******************************
+    PC : screen width > 1000px
+*******************************/
+
+@media screen and (min-width: 1000px) {
+  /* header */
+
+  header {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  header nav {
+    margin: auto 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item {
+    padding: 5px 10px 5px 20px;
+    border-left: 1px solid black;
+    letter-spacing: 15px;
+    font-size: 0.9em;
+  }
+
+  .item:first-child {
+    border: none;
+  }
+
+  .item a:hover {
+    color: saddlebrown;
+  }
+
+  .feature {
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .feature form {
+    width: 160px;
+    height: 34px;
+    margin-right: 20px;
+    border: 1px solid #222;
+    border-radius: 16px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  .feature form input {
+    width: 100px;
+    height: 30px;
+    margin: 0 14px 0 10px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .searchButton {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/search.png);
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  #callInputButton {
+    display: none;
+  }
+
+  .cart,
+  .member {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .cart img,
+  .member img {
+    width: 40px;
+    position: absolute;
+  }
+
+  .qty {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgba(139, 87, 42, 0.8);
+    position: absolute;
+    bottom: 4px;
+    right: 2px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .mobile {
+    height: 25px;
+    background-color: #000;
+  }
+
+  .mobile .item,
+  .mobile-feature {
+    display: none;
+  }
+
+  /* footer */
+
+  footer {
+    height: 70px;
+    padding-bottom: 30px;
+    background-color: #222;
+  }
+
+  .wrap {
+    max-width: 1160px;
+    display: flex;
+    align-items: center;
+  }
+
+  .links {
+    margin: 10px auto 10px 0;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 1em;
+  }
+
+  .linkItem {
+    width: 90px;
+    border-left: 1px solid #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  .linkItem:hover {
+    color: saddlebrown;
+  }
+
+  .link-0 .linkItem:first-child {
+    border: none;
+  }
+
+  .contact {
+    margin: 10px 30px;
+  }
+
+  .contact a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px 6px;
+  }
+
+  .contact img {
+    width: inherit;
+    height: inherit;
+  }
+
+  .wrap p {
+    color: #666;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+}
+
+/*******************************************
+    Tablet : width < 1000px & width > 600px
+********************************************/
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  /* header */
+  header {
+    height: 80px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .logo img {
+    width: 200px;
+    height: auto;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .feature form {
+    display: none;
+    width: 400px;
+    height: auto;
+    border: 1px solid #222;
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+  }
+
+  .feature form input {
+    width: 340px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    top: 6px;
+    left: 18px;
+  }
+
+  .searchButton {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/search.png);
+    background-size: contain;
+  }
+
+  #callInputButton {
+    display: absolute;
+    top: 20px;
+    right: 10px;
+  }
+
+  .cart,
+  .member {
+    display: none;
+  }
+
+  .mobile {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+  }
+
+  .mobile .item {
+    flex-grow: 1;
+    padding: 4px;
+    border-left: 1px solid #999;
+    text-align: center;
+    color: #999;
+    letter-spacing: 4px;
+  }
+
+  .mobile .item:first-child {
+    border: none;
+  }
+
+  .mobile-feature {
+    height: auto;
+    padding: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222;
+    color: #999;
+    letter-spacing: 4px;
+    position: fixed;
+    z-index: 400;
+    bottom: 0;
+  }
+
+  .mobile-feature a {
+    height: inherit;
+    border-left: 1px solid #999;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-feature .cart {
+    border: none;
+    position: relative;
+  }
+
+  .qty {
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    padding-left: 3px;
+    padding-top: 1px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgba(139, 87, 42, 0.8);
+    position: absolute;
+    bottom: 5px;
+    left: 42%;
+    text-align: center;
+  }
+
+  /* footer */
+
+  footer {
+    height: 200px;
+    background-color: #222;
+  }
+
+  .wrap {
+    max-width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links {
+    margin: 10px;
+    display: flex;
+    color: #fff;
+    font-size: 1em;
+  }
+
+  .linkItem {
+    width: 70px;
+    margin: 10px;
+    display: block;
+    font-size: 0.7em;
+  }
+
+  .contact {
+    margin: 10px;
+  }
+
+  .contact a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px 6px;
+  }
+
+  .contact img {
+    width: inherit;
+    height: inherit;
+  }
+
+  .wrap p {
+    color: #666;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+}
+
+/***************************
+    Mobile : width < 600px
+****************************/
+
+@media screen and (max-width: 600px) {
+  /* header */
+
+  header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .logo img {
+    width: 200px;
+    height: auto;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .feature form {
+    display: none;
+    width: 250px;
+    height: auto;
+    border: 1px solid #222;
+    border-radius: 20px;
+    position: relative;
+    margin: auto;
+  }
+
+  .feature form input {
+    width: 190px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    top: 6px;
+    left: 18px;
+  }
+
+  .searchButton {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/search.png);
+    background-size: contain;
+  }
+
+  #callInputButton {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+
+  .cart,
+  .member {
+    display: none;
+  }
+
+  .mobile {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+  }
+
+  .mobile .item {
+    flex-grow: 1;
+    padding: 4px;
+    border-left: 1px solid #999;
+    text-align: center;
+    color: #999;
+    letter-spacing: 4px;
+  }
+
+  .mobile .item:first-child {
+    border: none;
+  }
+
+  .mobile-feature {
+    height: auto;
+    padding: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222;
+    color: #999;
+    letter-spacing: 4px;
+    position: fixed;
+    z-index: 400;
+    bottom: 0;
+  }
+
+  .mobile-feature a {
+    height: inherit;
+    border-left: 1px solid #999;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-feature .cart {
+    border: none;
+    position: relative;
+  }
+
+  .qty {
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    padding-left: 3px;
+    padding-top: 1px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgba(139, 87, 42, 0.8);
+    position: absolute;
+    bottom: 5px;
+    left: 36%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  /* footer */
+
+  footer {
+    height: 250px;
+    background-color: #222;
+  }
+
+  .wrap {
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links {
+    margin: 10px;
+    display: flex;
+    color: #fff;
+    font-size: 1em;
+  }
+
+  .linkItem {
+    width: 70px;
+    margin: 10px;
+    display: block;
+    font-size: 0.7em;
+  }
+
+  .contact a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px 6px;
+  }
+
+  .contact img {
+    width: inherit;
+    height: inherit;
+  }
+
+  .wrap p {
+    color: #666;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .qty {
+    left: 32%;
+  }
+}

@@ -1,0 +1,45 @@
+@import 'common.css';
+
+main .view {
+  width: 80%;
+  max-width: 980px;
+  padding: 40px 10px;
+  margin: auto;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+
+main img {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+main .name {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin: 20px;
+}
+
+main .id,
+main .email {
+  font-size: 1.1em;
+  line-height: 2em;
+}
+
+main #logout,
+main #login {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+main #logout:hover,
+main #login:hover {
+  color: saddlebrown;
+}

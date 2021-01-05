@@ -1,0 +1,271 @@
+@import 'common.css';
+
+/******************************
+    PC : screen width > 1000px
+*******************************/
+
+@media screen and (min-width: 1000px) {
+  /* main */
+  .keyvisual {
+    height: 500px;
+    position: relative;
+  }
+
+  .visual {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .current {
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: 300;
+  }
+
+  .story {
+    width: 240px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-shadow: 0 0 0.3em #fff;
+  }
+
+  .step {
+    position: absolute;
+    bottom: 26px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 350;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .products {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: 28%;
+    height: auto;
+    margin: 0 1% 40px;
+    display: block;
+  }
+
+  .product-color {
+    width: 15px;
+    height: 15px;
+    margin: 10px 10px 10px 0;
+    border: 1px solid #555;
+    display: inline-block;
+    background-color: deepskyblue;
+  }
+
+  .product-intro {
+    font-size: 0.95em;
+    letter-spacing: 4px;
+    line-height: 1.8em;
+  }
+}
+
+/*******************************************
+    Tablet : width < 1000px & width > 600px
+********************************************/
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  /* main */
+  .keyvisual {
+    height: 500px;
+    background-color: #777;
+    position: relative;
+  }
+
+  .story {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-shadow: 0 0 0.3em #fff;
+  }
+
+  .visual {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .current {
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: 300;
+  }
+
+  .step {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    z-index: 350;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  .products {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: 28%;
+    height: auto;
+    margin: 0 1% 40px;
+    display: block;
+  }
+
+  .product-color {
+    width: 15px;
+    height: 15px;
+    margin: 10px 10px 10px 0;
+    border: 1px solid #555;
+    display: inline-block;
+    background-color: deepskyblue;
+  }
+
+  .product-intro {
+    font-size: 0.95em;
+    letter-spacing: 4px;
+    line-height: 1.8em;
+  }
+}
+
+/***************************
+    Mobile : width < 600px
+****************************/
+
+@media screen and (max-width: 600px) {
+  /* main */
+  .keyvisual {
+    height: 300px;
+    position: relative;
+  }
+
+  .visual {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .current {
+    opacity: 1;
+    transition: opacity 1s;
+    z-index: 300;
+  }
+
+  .story {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-shadow: 0 0 0.3em #fff;
+  }
+
+  .step {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 350;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  .products {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: 46%;
+    height: auto;
+    margin: 0 1% 40px;
+    display: block;
+  }
+
+  .product-color {
+    width: 15px;
+    height: 15px;
+    margin: 10px 10px 10px 0;
+    border: 1px solid #555;
+    display: inline-block;
+    background-color: deepskyblue;
+  }
+
+  .product-intro {
+    font-size: 0.95em;
+    letter-spacing: 4px;
+    line-height: 1.8em;
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LJF1G4C9EM"
+    ></script>
+    <script src="./js/googleAnalytics.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="description" content="E-commerce website built in 2020." />
+    <meta
+      name="viewport"
+      content="width = device-width, initial-scale = 1.0, user-scalable = no"
+    />
+    <title>Stylish</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/fbLogin.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="full-width">
+      <div class="logo">
+        <a href="./index.html"><img src="./images/logo.png" alt="logo" /></a>
+      </div>
+      <nav>
+        <div class="item women">
+          <a href="./index.html?tag=women">女裝</a>
+        </div>
+        <div class="item men">
+          <a href="./index.html?tag=men">男裝</a>
+        </div>
+        <div class="item accessories">
+          <a href="./index.html?tag=accessories">配件</a>
+        </div>
+      </nav>
+      <div class="feature">
+        <form action="./" method="get" id="searchForm">
+          <input type="text" name="keyword" />
+          <button type="submit" class="searchButton"></button>
+        </form>
+        <button
+          type="button"
+          class="searchButton"
+          id="callInputButton"
+        ></button>
+
+        <a href="./cart.html" class="cart">
+          <img src="./images/cart.png" alt="購物車" />
+          <div id="cart-qty" class="qty"></div>
+        </a>
+
+        <a class="member"><img src="./images/member.png" alt="會員" /></a>
+      </div>
+    </header>
+
+    <nav class="mobile full-width">
+      <div class="item women">
+        <a href="./index.html?tag=women">女裝</a>
+      </div>
+      <div class="item men">
+        <a href="./index.html?tag=men">男裝</a>
+      </div>
+      <div class="item accessories">
+        <a href="./index.html?tag=accessories">配件</a>
+      </div>
+    </nav>
+    <div class="mobile-feature full-width">
+      <a href="./cart.html" class="cart">
+        <img src="./images/cart-mobile.png" alt="購物車" />
+        <div id="mobile-cart-qty" class="qty"></div>
+        購物車
+      </a>
+      <a class="member">
+        <img src="./images/member-mobile.png" alt="會員" />
+        會員
+      </a>
+    </div>
+
+    <main class="full-width">
+      <div class="keyvisual full-width" id="keyvisual">
+        <a href="#" class="visual">
+          <div class="story"></div>
+        </a>
+        <div class="step"></div>
+      </div>
+
+      <div class="products fixed-width"></div>
+    </main>
+
+    <footer class="full-width">
+      <div class="wrap fixed-width">
+        <div class="links">
+          <div class="link link-0">
+            <div class="linkItem"><a href="#">關於 Stylish</a></div>
+            <div class="linkItem"><a href="#">服務條款</a></div>
+            <div class="linkItem"><a href="#">隱私政策</a></div>
+          </div>
+          <div class="link link-1">
+            <div class="linkItem"><a href="#">聯絡我們</a></div>
+            <div class="linkItem"><a href="#">FAQ</a></div>
+          </div>
+        </div>
+        <div class="contact">
+          <a href="#" id="contact-line"
+            ><img src="./images/line.png" alt="LINE"
+          /></a>
+          <a href="#" id="contact-twitter"
+            ><img src="./images/twitter.png" alt="Twitter"
+          /></a>
+          <a href="#" id="contact-facebook"
+            ><img src="./images/facebook.png" alt="Facebook"
+          /></a>
+        </div>
+        <p>&copy;2020. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="./js/index.js" type="module"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.0.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+  </body>
+</html>
