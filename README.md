@@ -1,68 +1,40 @@
-# Stylish
+# STYLiSH
 
-## Outline
+## Technologies
 
-### Programming Language
-
+### Front-End Basic
 - HTML
 - CSS
 - JavaScript(ES6)
 
 ### Layout
-
 - Responsive Web Design(RWD)
-- Flex and Grid Layout
-- Single Page Application(SPA)
+- Flexbox and Grid Layout
 
 ### Library and Framework
-
-- React
-- Redux
-- React Router
-- Creact React App(CSS Module, SASS/SCSS)
 - Facebook SDK
 
-### Backend Framework and Cloud Service
-
-- Node.js and Express
-- Firebase
-
 ### Networking
-
-- HTTP/HTTPS
 - JSON
-- RESTful APIs
-- AJAX(Fetch, Axios)
+- APIs
+- AJAX
 - CORS
 
+### Cloud Services
+- Firebase Hosting
+
 ### Persistent Store
-
 - Web Storage
-- Cookie
-
-### Patterns
-
-- Module
-- Object-Oriented Programming
-- Functional Programming
-- MVC
-
-### Others
-
-- Unit Test & Debugging
-- Performance Optimization
-- Cache
-- End to End Test
 
 ### Tools for Development
-
 - ESLint
 - Prettier
-- Webpack
-- Git, GitHub, Sourcetree
-- Slack
 
 ### Tools for Business
-
 - Google Analytics
 - Google PageSpeed Insights
+
+## Flow Chart
+<img src="https://github.com/xinyu605/Stylish/blob/master/Stylish/STYLiSH%20flow%20chart.png?raw=true" width="700">
+
+## Website Demo
